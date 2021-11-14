@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>SpongeMemes</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   		<link rel='stylesheet' href='./style.css'>
+	</head>
+	
+	<body>
+		
+		<main>		
+			
+			<a href='https://www.nick.com/shows/spongebob-squarepants' target='_blank'>
+				<img src='./logo.png' class='logo' alt='SpongeBob SquarePants' title='aah, classic'>
+			</a>			
+			<a href='https://www.nick.com/' target='_blank'>	
+				<img src='./nick.png' class='nick' alt='Nickelodeon' title='nick-foot'>
+			</a>
+			
+			<div class='content'>
+        		<div class='header'>
+        			<h1 class='welcome'>The best of SpongeBob SquarePants</h1>
+		        </div>
+		        <div class="box">
+		          <div class='info'>
+		            Hello :) This site was made for people, who likes the first three brilliant seasons of the show:"Spongebob SquarePants". Here you can find some nostalgia, laught sometimes, and if you want, take this pictures for yourself. Thank you ;)
+		          </div>
+		          <div class='seasons'>
+		            
+		            <div class='season'>
+		              <h3 class='season-header'>Season 1</h3>
+		              <div class="slideshow"></div>
+		            </div>
+
+		            <div class='season'>
+		              <h3 class='season-header'>Season 2</h3>
+		              <div class="slideshow"></div>
+		            </div>
+
+		            <div class='season'>
+		              <h3 class='season-header'>Season 3</h3>
+		              <div class="slideshow"></div>
+		            </div>
+
+		            <div class='season'>
+		              <h3 class='season-header'>Season 4</h3>
+		              <div class="slideshow"></div>
+		            </div>
+		          </div>
+	        	</div>
+			</div>
+		
+		<script type='text/javascript'>
+
+		    $(function() {
+		      var currentSlide = 1;
+		      var $slides = $('.mySlides');
+
+		      for (var i = 1; i <= 38; i++) {
+		        $('.slideshow').append(`<div><img src="./Season1/${i}.png" /></div>`)
+		      }
+
+		      $('.slideshow').slick();1
+		     });
+		</script>
+		</main>
+		
+		<footer><h7>&copy; Copyright <script>document.write(new Date().getFullYear())</script>, Nickelodeon, SpongeBob Squarepants</h7></footer>
+	</body>
+</html>

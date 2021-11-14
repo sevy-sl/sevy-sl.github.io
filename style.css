@@ -1,0 +1,102 @@
+body {
+	overflow: auto;
+	background: url(./background.jpg) no-repeat center center fixed;
+ 	background-size: cover;
+
+}
+
+@font-face {
+  font-family: krusty_crab;
+  src: url(KrabbyPatty-PKZAB.ttf);
+}
+
+.header {
+	min-height: 40px;
+	background: #FFFACD;
+	width: 100%;
+	border-radius: 10px;
+	position: relative;
+	bottom: 10px;
+}
+
+.welcome {
+	margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 50vw;
+	text-align: center;
+	color: #414DFF;
+	font-family: 'krusty_crab';
+	-webkit-text-stroke:  0.3px #8B8000;
+}
+
+.info {
+	text-align: center;
+	color: #FFFF00;
+	-webkit-text-stroke:  1.4px #A0522D;
+	font-family: 'krusty_crab';  
+	padding: 1.5em;
+	font-size: 23pt;
+	clear: left;
+}
+
+.box{ 
+	margin: auto;
+  width:80%;
+ 	min-height: 300px;
+  background:#FFE4B5;
+  border-radius: 40px;
+	justify-content: center;
+} 
+ 
+.slideshow img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.season-header {
+  font-size: 25px;
+  color: #414DFF;
+  font-family: 'krusty_crab';
+  -webkit-text-stroke:  0.5px #8B8000;
+}
+
+
+.logo {
+	height: 100px;
+	width: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+.nick {
+	height: 100px;
+	width: auto;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 3;
+}
+
+footer {
+	font-size: 1.4vh;
+	background-color: orange;
+	background-size: auto;
+	position: fixed;
+  bottom: 0;
+  left: 0;
+  display: inline;
+}
+
+.seasons {
+  padding: 30px;
+}
+
+.season {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 70px;
+}	
