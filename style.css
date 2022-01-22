@@ -6,8 +6,8 @@ body {
 }
 
 @font-face {
-  font-family: krusty_crab;
-  src: url(KrabbyPatty-PKZAB.ttf);
+  	font-family: krusty_crab;
+  	src: url(KrabbyPatty-PKZAB.ttf);
 }
 
 .header {
