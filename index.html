@@ -3,10 +3,10 @@
 	
 	<head>
 		<title>SpongeMemes</title>
-		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src='https://code.jquery.com/jquery-3.6.0.slim.min.js' integrity='sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=' crossorigin='anonymous'></script>
+    	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css' integrity='sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+   		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css' integrity='sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+   		<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js' integrity='sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
    		<link rel='stylesheet' href='./style.css'>
 	</head>
 	
@@ -25,25 +25,25 @@
         		<div class='header'>
         			<h1 class='welcome'>The best of SpongeBob SquarePants</h1>
 		        </div>
-		        <div class="box">
+		        <div class='box'>
 		          <div class='info'>
-		            Hello :) This site was made for people, who likes the first three brilliant seasons of the show:"Spongebob SquarePants". I wanted to thank animators for their work, because they really made the big part of the show. Thank you ;)
+		            Hello :) This site was made for people, who likes the first three brilliant seasons of the show:'Spongebob SquarePants'. I wanted to thank animators for their work, because they really made the big part of the show. Thank you ;)
 		          </div>
 		          <div class='seasons'>
 		            
 		            <div class='season'>
 		              <h3 class='season-header'>Season 1</h3>
-		              <div class="slideshow"></div>
+		              <div class='slideshow' id='slideshow1'></div>
 		            </div>
 
 		            <div class='season'>
 		              <h3 class='season-header'>Season 2</h3>
-		              <div class="slideshow"></div>
+		              <div class='slideshow' id='slideshow2'></div>
 		            </div>
 
 		            <div class='season'>
 		              <h3 class='season-header'>Season 3</h3>
-		              <div class="slideshow"></div>
+		              <div class='slideshow' id='slideshow3'></div>
 		            </div>
 		          </div>
 	        	</div>
@@ -55,11 +55,19 @@
 		      var currentSlide = 1;
 		      var $slides = $('.mySlides');
 
-		      for (var i = 1; i <= 38; i++) {
-		        $('.slideshow').append(`<div><img src="./Season1/${i}.png" /></div>`)
+		      for (var i = 1; i <= 100; i++) {
+		        $('#slideshow1').append(`<div><img src='./Season1/${i}.png' /></div>`)
+		      }
+			  for (var n = 1; n <= 56; n++) {
+		        $('#slideshow2').append(`<div><img src='./Season2/${n}.png' /></div>`)
+		      }
+			  for (var c = 1; c <= 14; c++) {
+		        $('#slideshow3').append(`<div><img src='./Season3/${n}.png' /></div>`)
 		      }
 
-		      $('.slideshow').slick();1
+		      $('#slideshow1').slick();1
+			  $('#slideshow2').slick();1
+			  $('#slideshow3').slick();1
 		     });
 		</script>
 		</main>
