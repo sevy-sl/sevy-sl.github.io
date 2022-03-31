@@ -28,26 +28,32 @@
         			<h1 class='welcome'>The best of SpongeBob SquarePants</h1>
 		        </div>
 		        <div class='box'>
-		          <div class='info'>
-		            Hello :) This site was made for people, who likes the first three brilliant seasons of the show:'Spongebob SquarePants'. I wanted to thank animators for their work, because they really made the big part of the show. Thank you ;)
-		          </div>
-		          <div class='seasons'>
+		          	<div class='info'>
+		            	Hello :) This site was made for people, who likes the first three brilliant seasons of the show:'Spongebob SquarePants'. I wanted to thank animators for their work, because they really made the big part of the show. Thank you ;)
+		          	</div>
+		          	<div class='seasons'>
 		            
-		            <div class='season'>
-		              <h3 class='season-header'>Season 1</h3>
-		              <div class='slideshow' id='slideshow1'></div>
-		            </div>
+						<div class='season'>
+							<h3 class='season-header'>Season 1</h3>
+							<div class='slideshow' id='slideshow1'></div>
+							<a data-fancybox class="gal_but" href='#hidden1'>Open full gallery</a>
+							<div class="hidden" id="hidden1"></div>
+						</div>
 
-		            <div class='season'>
-		              <h3 class='season-header'>Season 2</h3>
-		              <div class='slideshow' id='slideshow2'></div>
-		            </div>
+						<div class='season'>
+							<h3 class='season-header'>Season 2</h3>
+							<div class='slideshow' id='slideshow2'></div>
+							<a data-fancybox class="gal_but" href='#hidden2'>Open full gallery</a>
+							<div class="hidden" id="hidden2"></div>
+						</div>
 
-		            <div class='season'>
-		              <h3 class='season-header'>Season 3</h3>
-		              <div class='slideshow' id='slideshow3'></div>
-		            </div>
-		          </div>
+						<div class='season'>
+							<h3 class='season-header'>Season 3</h3>
+							<div class='slideshow' id='slideshow3'></div>
+							<a data-fancybox class="gal_but" href='#hidden3'>Open full gallery</a>
+							<div class="hidden" id="hidden3"></div>
+						</div>
+		          	</div>
 	        	</div>
 			</div>
 		
@@ -55,19 +61,22 @@
 
 		    $(function(){
 				for (var i = 1; i < 95; i++) {
-					$('#slideshow1').append(`<div><a class='gallery' href='./Season1/${i}.png'><img src='./Season1/${i}.png' class='image'></a></div>`)
+					$('#slideshow1').append(`<div><a class='gallery' href='./Season1/${i}.png'><img src='./Season1/${i}.png' class='image'></a></div>`);
+					$('#hidden1').append(`<div><a class='gallery' href='./Season1/${i}.png'><img src='./Season1/${i}.png' class='image_hid'></a></div>`);
 				};
 				for (var n = 1; n < 57; n++) {
-					$('#slideshow2').append(`<div><a class='gallery' href='./Season2/${n}.png'><img src='./Season2/${n}.png' class='image'></a></div>`)
+					$('#slideshow2').append(`<div><a class='gallery' href='./Season2/${n}.png'><img src='./Season2/${n}.png' class='image'></a></div>`);
+					$('#hidden2').append(`<div><a class='gallery' href='./Season2/${n}.png'><img src='./Season2/${n}.png' class='image_hid'></a></div>`);
 				};
 				for (var c = 1; c < 15; c++) {
-					$('#slideshow3').append(`<div><a class='gallery' href='./Season3/${c}.png'><img src='./Season3/${c}.png' class='image'></a></div>`)
+					$('#slideshow3').append(`<div><a class='gallery' href='./Season3/${c}.png'><img src='./Season3/${c}.png' class='image'></a></div>`);
+					$('#hidden3').append(`<div><a class='gallery' href='./Season3/${c}.png'><img src='./Season3/${c}.png' class='image_hid'></a></div>`);
 				};
 
 				$('#slideshow1').slick();
 				$('#slideshow2').slick();
 				$('#slideshow3').slick();
-				$(".gallery").fancybox();
+				$('.gallery').fancybox();
 		    });
 		</script>
 		</main>

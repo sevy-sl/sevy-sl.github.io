@@ -101,3 +101,22 @@ footer {
   	height: 200px;
   	margin: 120px;
 }
+
+.hidden {
+	display: none;
+	width: 90%;
+	height: 90%;
+}
+
+.gal_but {
+	font-family: 'krusty_crab';
+	-webkit-text-stroke: 1px #000000;
+	color: #03e4ec;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+.image_hid {
+  	max-height: 200px;
+	margin: 10px;
+}
