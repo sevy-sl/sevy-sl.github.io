@@ -50,9 +50,10 @@ body {
 	justify-content: center;
 } 
  
-.slideshow img {
+.image {
 	max-width: 200px;
   	max-height: 200px;
+	border-radius: 15px;	  
 }
 
 .season-header {
@@ -99,4 +100,4 @@ footer {
   	width: 200px;
   	height: 200px;
   	margin: 120px;
-}	
+}

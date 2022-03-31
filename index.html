@@ -3,11 +3,13 @@
 	
 	<head>
 		<title>SpongeMemes</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.css">
 		<script src='https://code.jquery.com/jquery-3.6.0.slim.min.js' integrity='sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=' crossorigin='anonymous'></script>
     	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css' integrity='sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==' crossorigin='anonymous' referrerpolicy='no-referrer' />
    		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css' integrity='sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==' crossorigin='anonymous' referrerpolicy='no-referrer' />
    		<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js' integrity='sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
-   		<link rel='stylesheet' href='./style.css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.js"></script>
+		<link rel='stylesheet' href='./style.css'>
 	</head>
 	
 	<body>
@@ -51,21 +53,22 @@
 		
 		<script type='text/javascript'>
 
-		    $(function() {
-		      for (var i = 1; i <= 94; i++) {
-		        $('#slideshow1').append(`<div><img src='./Season1/${i}.png' /></div>`)
-		      }
-			  for (var n = 1; n <= 56; n++) {
-		        $('#slideshow2').append(`<div><img src='./Season2/${n}.png' /></div>`)
-		      }
-			  for (var c = 1; c <= 14; c++) {
-		        $('#slideshow3').append(`<div><img src='./Season3/${c}.png' /></div>`)
-		      }
+		    $(function(){
+				for (var i = 1; i < 95; i++) {
+					$('#slideshow1').append(`<div><a class='gallery' href='./Season1/${i}.png'><img src='./Season1/${i}.png' class='image'></a></div>`)
+				};
+				for (var n = 1; n < 57; n++) {
+					$('#slideshow2').append(`<div><a class='gallery' href='./Season2/${n}.png'><img src='./Season2/${n}.png' class='image'></a></div>`)
+				};
+				for (var c = 1; c < 15; c++) {
+					$('#slideshow3').append(`<div><a class='gallery' href='./Season3/${c}.png'><img src='./Season3/${c}.png' class='image'></a></div>`)
+				};
 
-		      $('#slideshow1').slick();
-			  $('#slideshow2').slick();
-			  $('#slideshow3').slick();
-		     });
+				$('#slideshow1').slick();
+				$('#slideshow2').slick();
+				$('#slideshow3').slick();
+				$(".gallery").fancybox();
+		    });
 		</script>
 		</main>
 		
