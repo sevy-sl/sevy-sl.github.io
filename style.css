@@ -2,7 +2,7 @@
     position: absolute;
     top:40%;
     left:10%;
-    display: inline-flex;
+    display: inline-block;
 }
 
 .site-link{
@@ -23,7 +23,6 @@
 
 .site-header {
     font-size: 3vh;
-    text-align: center;
 }
 
 .site {
