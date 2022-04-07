@@ -1,8 +1,17 @@
+body {
+    background-color: black;
+}
+
+img {
+    border: 0.2vh solid;
+    border-color: rgb(104, 104, 104);
+}
+
 .sites{
     position: absolute;
     top:40%;
     left:10%;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .site-link{
@@ -22,6 +31,7 @@
 }
 
 .site-header {
+    color: rgb(161, 161, 161);
     font-size: 3vh;
 }
 
